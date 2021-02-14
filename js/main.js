@@ -6,14 +6,28 @@ $(function(){
     nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnnext"><img src="./images/slider/arrow-right.svg" alt=""></button>',
   });
 
-  $('.search__tabs-item').on('click', function(e) {
+  $('.tab').on('click', function(e) {
     e.preventDefault();
 
-    $('.search__tabs-item').removeClass('search__tabs-item--active');
-    $('.search__content-item').removeClass('search__content-item--active');
+    $('.tab').removeClass('tab--active');
+    $('.tabs-content').removeClass('tabs-content--active');
 
-    $(this).addClass('search__tabs-item--active');
-    $($(this).attr('href')).addClass('search__content-item--active');
+    $(this).addClass('tab--active');
+    $($(this).attr('href')).addClass('tabs-content--active');
+  });
+
+  $('.product-item__favorite').on('click', function() {
+    $(this).toggleClass('product-item__favorite--active');
+  });
+
+  // Подключаем слайдер в разделе популярные товары
+  $('.product-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow:
+      '<button class="product-slider__slider-btn product-slider__slider-btnprev"><img src="./images/slider/arrow-black-left.svg" alt=""></button>',
+    nextArrow:
+      '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="./images/slider/arrow-black-right.svg" alt=""></button>',
   });
 
 });
