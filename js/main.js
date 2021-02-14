@@ -17,7 +17,17 @@ $(function(){
   });
 
   $('.product-item__favorite').on('click', function() {
-    $('.product-item__favorite').toggleClass('product-item__favorite--active');
+    $(this).toggleClass('product-item__favorite--active');
+  });
+
+  // Подключаем слайдер в разделе популярные товары
+  $('.product-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow:
+      '<button class="product-slider__slider-btn product-slider__slider-btnprev"><img src="./images/slider/arrow-black-left.svg" alt=""></button>',
+    nextArrow:
+      '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="./images/slider/arrow-black-right.svg" alt=""></button>',
   });
 
 });
