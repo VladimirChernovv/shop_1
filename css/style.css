@@ -758,3 +758,41 @@ body {
 	font-size: 10px;
 	margin: 0 40px;
 }
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+	margin-bottom: 40px;
+}
+
+.breadcrumbs__list {
+
+}
+
+.breadcrumbs__list-item {
+	display: inline-block;
+	padding-right: 16px;
+	margin-right: 10px;
+	position: relative;
+	line-height: 18px;
+	font-size: 15px;
+	color: #C4C4C4;
+}
+
+.breadcrumbs__list-item::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	background-image: url('../images/slider/arrow-black-right-small.svg');
+	width: 6px;
+	height: 9px;
+	bottom: 5px;
+}
+
+.breadcrumbs__list-item:last-child::after {
+	display: none;
+}
+
+.breadcrumbs__list-link {
+
+}
