@@ -856,6 +856,80 @@ button.catalog__filter-btnline {
 	margin-right: 10px;
 }
 
+.aside-filter__tabs {
+	display: flex;
+	justify-content: space-between;
+}
+
+.aside-filter__tab {
+	font-size: 16px;
+	list-style: 19px;
+	font-weight: 400;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+	color: #C4C4C4;
+	width: 50%;
+}
+
+.aside-filter__tab.tab--active {
+	font-family: 'SFProDisplay-Bold', sans-serif;
+	color: #2F3035;
+	font-weight: bold;
+}
+
+.aside-filter__tab.tab--active span {
+	display: inline-block;
+	border-bottom: 1px solid #1C62CD;
+	padding-bottom: 7px;
+}
+
+.aside-filter__item-drop {
+	margin: 40px 0;
+}
+
+.aside-filter__item-title {
+	font-family: 'SFProDisplay-Semibold', sans-serif;
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 600;
+	padding-left: 26px;
+}
+
+.filter__item-drop {
+	margin-bottom: 20px;
+	position: relative;
+	cursor: pointer;
+}
+
+.filter__item-drop::before {
+	content: '';
+	background-image: url('../images/catalog/arrow-down.svg');
+	position: absolute;
+	left: 0;
+	bottom: 5px;
+	width: 12px;
+	height: 8px;
+	transform: rotate(0deg);
+}
+
+.filter__item-drop--active::before {
+	transform: rotate(180deg);
+}
+
+.aside-filter__content {
+	display: flex;
+}
+
+.aside-filter__content-box {
+	width: 50%;
+}
+
+.aside-filter__content-label {
+	font-size: 14px;
+	line-height: 17px;
+	cursor: pointer;
+}
+
 .catalog__inner-list {
 	display: flex;
 	justify-content: space-between;
