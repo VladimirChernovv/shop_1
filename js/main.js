@@ -34,11 +34,18 @@ $(function(){
   });
 
   // Подключаем jQuery Form Styler
-
   $('.filter-style').styler();
 
-  $('.filter__item-drop').on('click', function() {
+  $('.filter__item-drop').on('click', function () {
     $(this).toggleClass('filter__item-drop--active');
     $(this).next().slideToggle(200);
+  });
+
+  // Подключаем RangeSlider
+  $('.js-range-slider').ionRangeSlider({
+    
+    type: 'double',
+    min: 100000,
+    max: 500000,
   });
 });
