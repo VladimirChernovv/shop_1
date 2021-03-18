@@ -33,19 +33,34 @@ $(function(){
       '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="./images/slider/arrow-black-right.svg" alt=""></button>',
   });
 
-  // Подключаем jQuery Form Styler
+  // Подключаем jQuery Form Styler - выпадающее меню
   $('.filter-style').styler();
 
-  $('.filter__item-drop').on('click', function () {
+  $('.filter__item-drop, .filter__extra').on('click', function () {
     $(this).toggleClass('filter__item-drop--active');
     $(this).next().slideToggle(200);
   });
 
-  // Подключаем RangeSlider
+  // Подключаем RangeSlider - отображение шкалы(бигунка) с ценами
   $('.js-range-slider').ionRangeSlider({
     
     type: 'double',
     min: 100000,
     max: 500000,
   });
+
+  // Переключение прозрачности при клике на кнопки btngrid и btnline
+
+  $('.catalog__filter-btngrid').on('click', function() {
+    $(this).addClass('catalog__filter-button--active');
+    $('.catalog__filter-btnline').removeClass('catalog__filter-button--active');
+    $('.product-item__wrapper').removeClass('product-item__wrapper--list');
+  });
+
+  $('.catalog__filter-btnline').on('click', function () {
+    $(this).addClass('catalog__filter-button--active');
+    $('.catalog__filter-btngrid').removeClass('catalog__filter-button--active');
+    $('.product-item__wrapper').addClass('product-item__wrapper--list');
+  }); 
+
 });
