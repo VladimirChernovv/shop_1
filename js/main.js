@@ -43,7 +43,6 @@ $(function(){
 
   // Подключаем RangeSlider - отображение шкалы(бигунка) с ценами
   $('.js-range-slider').ionRangeSlider({
-    
     type: 'double',
     min: 100000,
     max: 500000,
@@ -51,7 +50,7 @@ $(function(){
 
   // Переключение прозрачности при клике на кнопки btngrid и btnline
 
-  $('.catalog__filter-btngrid').on('click', function() {
+  $('.catalog__filter-btngrid').on('click', function () {
     $(this).addClass('catalog__filter-button--active');
     $('.catalog__filter-btnline').removeClass('catalog__filter-button--active');
     $('.product-item__wrapper').removeClass('product-item__wrapper--list');
@@ -61,6 +60,18 @@ $(function(){
     $(this).addClass('catalog__filter-button--active');
     $('.catalog__filter-btngrid').removeClass('catalog__filter-button--active');
     $('.product-item__wrapper').addClass('product-item__wrapper--list');
-  }); 
+  });
+
+  // Подключаем плагин Rate Yo - Звёздный рейтинг
+
+  $('.rate-yo').rateYo({
+    ratedFill: '#1C62CD',
+    spacing: '7px',
+    normalFill: '#C4C4C4',
+  });
+
+
+
+
 
 });
