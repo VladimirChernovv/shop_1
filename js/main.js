@@ -24,6 +24,7 @@ $(function(){
   });
 
   // Подключаем слайдер в разделе популярные товары
+
   $('.product-slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -34,6 +35,7 @@ $(function(){
   });
 
   // Подключаем jQuery Form Styler - выпадающее меню
+
   $('.filter-style').styler();
 
   $('.filter__item-drop, .filter__extra').on('click', function () {
@@ -42,6 +44,7 @@ $(function(){
   });
 
   // Подключаем RangeSlider - отображение шкалы(бигунка) с ценами
+
   $('.js-range-slider').ionRangeSlider({
     type: 'double',
     min: 100000,
@@ -70,8 +73,9 @@ $(function(){
     normalFill: '#C4C4C4',
   });
 
+  // Открываем мобильное меню(menu-mobile__list)
 
-
-
-
+  $('.menu__btn').on('click', function () {
+    $('.menu-mobile__list').toggleClass('menu-mobile__list--active');
+  });
 });
