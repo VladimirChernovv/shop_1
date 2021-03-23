@@ -132,7 +132,10 @@ $(function() {
     $(this).toggleClass('footer__topdrop--active');
   });
 
+  // Кнопка скрывающее aside на разрещении 968px  
 
-
+  $('.aside__btn').on('click', function () {
+    $(this).next().slideToggle();
+  });
 
 });
