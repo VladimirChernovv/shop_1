@@ -1,4 +1,10 @@
+@media screen and (max-width: 1300px) {
+	 /* Products */
 
+	 .product__more {
+		 margin-top: 60px;
+	 }
+}
 
 @media screen and (max-width: 1200px) {
 
@@ -21,6 +27,12 @@
 
 	.categories__inner {
 		justify-content: space-around;
+	}
+
+	/* Banner */
+
+	.banner__link img {
+		width: 100%;
 	}
 }
 
@@ -155,6 +167,13 @@
     padding: 17px;
 		position: absolute;
 	}
+
+	/* Banner */
+
+	.banner__link {
+		min-height: 90px;
+		object-fit: contain;
+	}
 }
 
 @media screen and (max-width: 440px) {
@@ -170,5 +189,4 @@
 	.categories__item {
 		padding: 20px 10px 16px;
 	}
-
 }

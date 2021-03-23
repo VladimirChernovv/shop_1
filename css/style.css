@@ -261,6 +261,10 @@ body {
 	background-color: transparent;
 }
 
+.slick-dots .slick-active button {
+	background-color: #fff;
+}
+
 .slick-active li button {
 	background-color: #fff;
 }
@@ -529,6 +533,18 @@ body {
 
 .product-slider__slider-btnnext {
 	right: -20px;
+}
+
+.product-slider .slick-dots {
+	bottom: -30px;
+}
+
+.product-slider .slick-dots button {
+	background-color: #C4C4C4;
+}
+
+.product-slider .slick-dots .slick-active button {
+	background-color: #1C62CD;
 }
 
 .product-item__wrapper {
