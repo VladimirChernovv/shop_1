@@ -95,6 +95,16 @@
 		max-width: 100%;
 		margin-bottom: 25px;
 	}
+
+	/* Search */
+
+	.tabs-wrapper {
+		overflow-x: scroll;
+	}
+
+	.mobile-overflow {
+		width: 1000px;
+	}
 }
 
 @media screen and (max-width: 640px) {
@@ -114,6 +124,33 @@
 	.banner-section .container {
 		padding: 0;
 	}
+
+	/* Search */
+
+	.search__content-form {
+		position: relative;
+	}
+
+	.search__content-input {
+		height: 50px;
+		padding-right: 50px;
+	}
+
+	.search__content-btn {
+    background-image: url('../images/search/search.svg');
+		background-repeat: no-repeat;
+		width: 24px;
+		height: 24px;
+		top: 13px;
+		right: 8px;
+		background-color: transparent;
+    font-size: 0;
+    line-height: 0;
+    padding: 17px;
+		position: absolute;
+	}
+
+
 }
 
 @media screen and (max-width: 440px) {
