@@ -379,6 +379,10 @@
 	.footer__bottom-link {
 		margin: 12px 0;
 	}
+
+	.footer__topdrop {
+		pointer-events: auto;
+	}
 }
 
 @media screen and (max-width: 440px) {
