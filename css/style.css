@@ -769,6 +769,10 @@ body {
 	line-height: 17px;
 }
 
+.footer__topdrop {
+	pointer-events: none;
+}
+
 .footer-form {
 	display: flex;
 	justify-content: space-between;
