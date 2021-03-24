@@ -1549,6 +1549,10 @@ button.catalog__filter-btnline {
 	cursor: pointer;
 }
 
+.product-card__btn-mobile {
+	display: none;
+}
+
 /* Card-tabs */
 
 .card__tabs {
