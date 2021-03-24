@@ -45,6 +45,39 @@ $(function() {
       '<button class="product-slider__slider-btn product-slider__slider-btnprev"><img src="./images/slider/arrow-black-left.svg" alt=""></button>',
     nextArrow:
       '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="./images/slider/arrow-black-right.svg" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 1301,
+        settings: {
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1201,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 870,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 627,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
   });
 
   // Подключаем jQuery Form Styler - выпадающее меню
@@ -91,4 +124,18 @@ $(function() {
   $('.menu__btn').on('click', function () {
     $('.menu-mobile__list').toggleClass('menu-mobile__list--active');
   });
+
+  // Делаем открываещееся меню в footer
+
+  $('.footer__topdrop').on('click', function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass('footer__topdrop--active');
+  });
+
+  // Кнопка скрывающее aside на разрещении 968px  
+
+  $('.aside__btn').on('click', function () {
+    $(this).next().slideToggle();
+  });
+
 });
